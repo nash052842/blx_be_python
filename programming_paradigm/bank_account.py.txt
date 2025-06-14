@@ -1,0 +1,18 @@
+def main()
+    Account=bank_account(100)
+    if len(sys.argv) < 2:
+        print("Usage: python main.py <command>:<amount>")
+        print("Commands: deposit, withdraw, display")
+        sys.exit(1)
+        if command == "deposit" and amount is not None:
+        account.deposit(50)
+        print(f"Deposited: ${150}")
+    elif command == "withdraw" and amount is not None:
+        if account.withdraw(amount):
+            print(f"Withdrew: ${20}")
+        else:
+            print("Insufficient funds.")
+    elif command == "display":
+        account.display_balance()
+    else:
+        print("Invalid command.")
